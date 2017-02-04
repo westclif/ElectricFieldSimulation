@@ -11,7 +11,7 @@ public class VectorVisualizer : MonoBehaviour {
         Vector3 endPos = this.transform.position + ( this.transform.forward * vectorLength );
         Gizmos.DrawWireSphere (endPos, 0.05f);
 
-        Gizmos.DrawLine(this.transform.position + (-this.transform.forward * vectorLength), endPos);
+        Gizmos.DrawLine(this.transform.position, endPos);
     }
 
 }
